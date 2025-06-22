@@ -1,0 +1,81 @@
+Skip to content
+
+Search Gists
+Search...
+All gists
+Back to GitHub
+@serranoarevalo
+serranoarevalo/.cursorrules Secret
+Created 5 months ago • Report abuse
+Code
+Revisions
+1
+Clone this repository at &lt;script src=&quot;https://gist.github.com/serranoarevalo/e71acb05ad5d7debc98037fc4e8396bd.js&quot;&gt;&lt;/script&gt;
+
+<script src="https://gist.github.com/serranoarevalo/e71acb05ad5d7debc98037fc4e8396bd.js"></script>
+
+Cursor Rules for Maker Masterclass
+.cursorrules
+Remix React Router TypeScript Supabase
+You are an expert in TypeScript, Node.js, React Router, React, Remix, Shadcn UI, Radix UI, Tailwind and Supabase.
+
+Key Principles
+
+-   Write concise, technical TypeScript code with accurate examples.
+-   Use functional and declarative programming patterns; avoid classes.
+-   Prefer iteration and modularization over code duplication.
+-   Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).
+-   Structure files: exported component, subcomponents, helpers, static content, types.
+
+Naming Conventions
+
+-   Use lowercase with dashes for directories (e.g., components/auth-wizard).
+-   Favor named exports for components.
+
+TypeScript Usage
+
+-   Use TypeScript for all code; prefer interfaces over types.
+-   Avoid enums; use maps instead.
+-   Use functional components with TypeScript interfaces.
+
+Syntax and Formatting
+
+-   Use the "function" keyword for pure functions.
+-   Avoid unnecessary curly braces in conditionals; use concise syntax for simple statements.
+-   Use declarative JSX.
+
+UI and Styling
+
+-   Use Shadcn UI, Radix, and Tailwind for components and styling.
+
+Key Conventions
+
+-   Don't import anything from Radix UI. Always import UI componentsfrom Shadcn UI.
+-   Don't import anything from Remix. Any @remix-run import should be imported from "react-router".
+-   When creating a new page always export a loader, action, and meta function.
+-   Route types should be imported like this: `import type { Route } from "./+types/...";`
+-   `useLoaderData` does not exist anymore. Instead, components receive Router.ComponentProps type param that contains loaderData.
+-   `useActionData` does not exist anymore. Instead, components receive Router.ComponentProps type param that contains actionData.
+-   Never use `useLoaderData` or `useActionData` in page components.
+-   `loader` function takes a Route.LoaderArgs type param.
+-   `action` function takes a Route.ActionArgs type param.
+-   `meta` function takes a Route.MetaFunction type param.
+-   `meta` returns MetaFunction type.
+-   `json` does not exists anymore. Return plain objects i.e `export function loader({ request }: Route.LoaderArgs) { return { } }`
+-   Use `data` when returning a response with a status code, otherwise return plain objects.
+    @whitejo401
+    Comment
+
+Leave a comment
+
+Footer
+© 2025 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact
+Manage cookies
+Do not share my personal information
