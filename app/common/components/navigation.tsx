@@ -1,8 +1,8 @@
 import { Link } from "react-router";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
-import { DropdownMenu, DropdownMenuTrigger } from "./ui/dropdown-menu";
-import { BellIcon } from "lucide-react";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { BarChart3Icon, BellIcon, LogOutIcon, SettingsIcon, UserIcon } from "lucide-react";
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink, NavigationMenuContent, NavigationMenuTrigger, navigationMenuTriggerStyle } from "./ui/navigation-menu";
 
 const menus = [
@@ -70,9 +70,42 @@ export default function Navigation({}) {
             <DropdownMenuTrigger asChild>
               <Avatar>
                 <AvatarImage src="https://github.com/whitejo401.png" />
-                <AvatarFallback>CN</AvatarFallback>
+                <AvatarFallback>J</AvatarFallback>
               </Avatar>
             </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-48">
+              <DropdownMenuLabel className="flex flex-col">
+                <span className="font-medium">SJ Kim</span>
+                <span className="text-xs text-muted-foreground">@username</span>
+              </DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuGroup>
+              <DropdownMenuItem asChild>
+                  <Link to="/my/dashboard">
+                    <BarChart3Icon className="w-4 h-4 mr-2" />
+                    Dashboard
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/my/profile">
+                    <UserIcon className="w-4 h-4 mr-2" />
+                    <span>Profile</span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/my/settings">
+                    <SettingsIcon className="w-4 h-4 mr-2" />
+                    Settings
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/logout">
+                    <LogOutIcon className="w-4 h-4 mr-2" />
+                    Logout
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuGroup>
+            </DropdownMenuContent>
           </DropdownMenu>  
         </div>        
       </div>
