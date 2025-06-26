@@ -42,8 +42,8 @@ export default function HomePage() {
           </CardHeader>
           <CardContent className="flex flex-wrap gap-6 justify-start">         
               <div className="flex flex-col items-center space-y-2">
-                <Avatar>
-                  <AvatarImage src="https://github.com/whitejo401.png" className="h-10 w-10" />
+                <Avatar className="h-16 w-16">
+                  <AvatarImage src="https://github.com/whitejo401.png" className="h-16 w-16" />
                   <AvatarFallback>J</AvatarFallback>
                 </Avatar>
                 <span className="font-medium text-sm text-gray-800">Jonet</span>
@@ -53,9 +53,9 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-2">
-                <Avatar>
-                  <AvatarImage src="https://placehold.co/60x60/FFD700/333333?text=L" className="h-10 w-10" />
-                  <AvatarFallback>J</AvatarFallback>
+                <Avatar className="h-16 w-16">
+                  <AvatarImage src="https://private-user-images.githubusercontent.com/35785822/459433827-00ec3876-d844-4a59-891d-569d2ae945de.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA5NDUxNjQsIm5iZiI6MTc1MDk0NDg2NCwicGF0aCI6Ii8zNTc4NTgyMi80NTk0MzM4MjctMDBlYzM4NzYtZDg0NC00YTU5LTg5MWQtNTY5ZDJhZTk0NWRlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjI2VDEzMzQyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU2NzQ4NmM4MGM0MTAzZDQ4ODUyODBiOTEyMzIxNzM5ODVmMGRiMDc1MTNmZDY0Y2JkOTVkYzYzNjM3NWUyMzgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ehS28r2t_6UTciDyjsmOz0j5vFUMjO7q2JHbOgyGrEU" />
+                  <AvatarFallback>N</AvatarFallback>
                 </Avatar>
                 <span className="font-medium text-sm text-gray-800">Lee</span>
                 <div className="flex items-center text-xs text-gray-500">
@@ -64,9 +64,9 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-2">
-                <Avatar>
-                  <AvatarImage src="https://placehold.co/60x60/8A2BE2/FFFFFF?text=J" className="h-10 w-10" />
-                  <AvatarFallback>J</AvatarFallback>
+                <Avatar className="h-16 w-16">
+                  <AvatarImage src="https://private-user-images.githubusercontent.com/35785822/459433982-1433d781-b2c9-4bce-8039-7d5482095be1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA5NDUxNjQsIm5iZiI6MTc1MDk0NDg2NCwicGF0aCI6Ii8zNTc4NTgyMi80NTk0MzM5ODItMTQzM2Q3ODEtYjJjOS00YmNlLTgwMzktN2Q1NDgyMDk1YmUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjI2VDEzMzQyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFlNjJhYjBmNmY5ZjExYjFkODYwODAyMDkxYzdlZGZhZjBhMWUzMDVkZTQxNzJjNjJkZjMyZDFmZTY5OWViMmMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.tP-W_xl19ahYdwH6ot5ej5Jh6jB2yB7K7o8f3JXw3CM" />
+                  <AvatarFallback>N</AvatarFallback>
                 </Avatar>
                 <span className="font-medium text-sm text-gray-800">Jaelyn</span>
                 <div className="flex items-center text-xs text-gray-500">
