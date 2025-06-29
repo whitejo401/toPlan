@@ -24,7 +24,7 @@ export default function HomePage() {
                 Plan your week with Family
             </CardTitle>
             <CardDescription className="text-sm text-muted-foreground">
-              가족과 함께 주간 일정을 계획하고 관리하세요. 약속, 작업, 이벤트를 손쉽게 관리하세요.
+              함께하는 순간을 더욱 특별하게. 가족의 일정을 한눈에 보고 소통하세요.
             </CardDescription>
           </CardHeader>
           <CardFooter className="py-4">
