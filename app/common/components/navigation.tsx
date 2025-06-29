@@ -8,7 +8,7 @@ import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuL
 const menus = [
     {
         name:"Dashboard",
-        to:"/dashboard"      
+        to:"/boards"      
     },
     {
         name:"Schedules",
