@@ -5,9 +5,20 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem,
 import { BarChart3Icon, BellIcon, LogOutIcon, SettingsIcon, UserIcon } from "lucide-react";
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink, NavigationMenuContent, NavigationMenuTrigger, navigationMenuTriggerStyle } from "./ui/navigation-menu";
 
-const menus = [
+interface MenuItem {
+    name: string;
+    to: string;
+}
+
+interface Menu {
+    name: string;
+    to: string;
+    items?: MenuItem[];
+}
+
+const menus: Menu[] = [
     {
-        name:"Dashboard",
+        name:"Boards",
         to:"/boards"      
     },
     {
