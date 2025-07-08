@@ -26,6 +26,7 @@
     "@radix-ui/react-toggle-group": "^1.1.10",
     "@react-router/node": "^7.5.3",
     "@react-router/serve": "^7.5.3",
+    "@supabase/ssr": "^0.6.1",
     "@supabase/supabase-js": "^2.50.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
