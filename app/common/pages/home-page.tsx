@@ -1,4 +1,4 @@
-import type { MetaFunction } from "react-router";
+import type { LoaderFunctionArgs, MetaFunction } from "react-router";
 import { Button } from "~/common/components/ui/button";
 import { Link } from "react-router";
 import { BellIcon, PlusIcon, UsersIcon } from "lucide-react";
@@ -6,6 +6,7 @@ import { DropdownMenu, DropdownMenuTrigger } from "~/common/components/ui/dropdo
 import { Avatar, AvatarFallback, AvatarImage } from "~/common/components/ui/avatar";
 import { Separator } from "../components/ui/separator";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card";
+import { browserClient, makeSSRClient } from "~/supa-client";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,6 +14,11 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Share your plans with your Family and Friends" },
   ];
 };
+
+export async function loader({ request }: LoaderFunctionArgs) {
+  const { client, headers } = makeSSRClient(request);
+}
+
 
 export default function HomePage() {
   return (
