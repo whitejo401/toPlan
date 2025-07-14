@@ -35,7 +35,15 @@ const menus: Menu[] = [
     }
 ];
 
-export default function Navigation({}) {
+export default function Navigation({ 
+  isLoggedIn, 
+  hasNotifications = false, 
+  hasMessages = false 
+}: { 
+  isLoggedIn: boolean, 
+  hasNotifications?: boolean, 
+  hasMessages?: boolean 
+}) {
   return (
     <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 2xl:px-80 py-2">
       <div className="flex items-center justify-between">
@@ -70,7 +78,8 @@ export default function Navigation({}) {
             </NavigationMenuList>
         </NavigationMenu>    
 
-        <div className="flex items-center gap-2">
+        {isLoggedIn ? (
+          <div className="flex items-center gap-2">
           <Button size="icon" variant="ghost" asChild className="relative">
               <Link to="/my/notifications">
                 <BellIcon className="size-4" />
@@ -118,7 +127,17 @@ export default function Navigation({}) {
               </DropdownMenuGroup>
             </DropdownMenuContent>
           </DropdownMenu>  
-        </div>        
+          </div>
+        ) : (
+          <div className="flex items-center gap-2">
+            <Button asChild>
+              <Link to="/auth/login">Login</Link>
+            </Button>
+            <Button asChild>
+              <Link to="/auth/join">Join</Link>
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );

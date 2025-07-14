@@ -16,7 +16,7 @@ export const meta: MetaFunction = () => {
 };
 
 export async function loader({ request }: LoaderFunctionArgs) {
-  const { client, headers } = makeSSRClient(request);
+  const { client, headers } = makeSSRClient(request); 
 }
 
 

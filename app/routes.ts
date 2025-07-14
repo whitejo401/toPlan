@@ -18,4 +18,8 @@ export default [
       index("features/groups/pages/groups-page.tsx"),
       route("/:groupId", "features/groups/pages/group-page.tsx"),    
     ]),
+    ...prefix("auth", [
+      route("/login", "features/auth/pages/login-page.tsx"),
+      route("/join", "features/auth/pages/join-page.tsx"),
+    ]),
   ] satisfies RouteConfig;
